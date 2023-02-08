@@ -35,9 +35,6 @@ export function attendATeaParty() {
 	print(`He and the March Hare set the table...`);
 
 	const drinks = setTheTable();
-	console.log(drinks);
-	console.log(drinks.seats);
-	console.log(drinks.seats.length);
 
 	if (!drinks || !drinks.seats || drinks.seats.length <= 0) {
 		print(`... but something went very wrong with the table. 😱`);
