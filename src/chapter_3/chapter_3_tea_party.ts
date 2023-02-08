@@ -20,7 +20,12 @@ type Table = {
 
 function setTheTable(): Table {
 	// 👉 FIXME ❌
-	return { seats: [] };
+	const someDrink : Drink = {type: 'Tea', poured: true};
+	const someSeat : Seat = {drink: someDrink};
+	const aDrink : Drink = {type: 'Coffee', poured: true};
+	const aSeat : Seat = {drink: aDrink};
+	//return { seats: [] };
+	return { seats: [someSeat, someSeat, someSeat] };
 }
 
 export function attendATeaParty() {
@@ -30,6 +35,9 @@ export function attendATeaParty() {
 	print(`He and the March Hare set the table...`);
 
 	const drinks = setTheTable();
+	console.log(drinks);
+	console.log(drinks.seats);
+	console.log(drinks.seats.length);
 
 	if (!drinks || !drinks.seats || drinks.seats.length <= 0) {
 		print(`... but something went very wrong with the table. 😱`);
