@@ -22,8 +22,6 @@ function setTheTable(): Table {
 	// 👉 FIXME ❌
 	const someDrink : Drink = {type: 'Tea', poured: true};
 	const someSeat : Seat = {drink: someDrink};
-	const aDrink : Drink = {type: 'Coffee', poured: true};
-	const aSeat : Seat = {drink: aDrink};
 	//return { seats: [] };
 	return { seats: [someSeat, someSeat, someSeat] };
 }
