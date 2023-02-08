@@ -48,11 +48,10 @@ export function meetTheQueen(): void {
 
 // 👉 FIXME ❌ - this function needs writing to meet the above criteria
 function getWitnesses(): any {
-	const verdict : Verdict = {VERDICTS: 'Not Guilty'};
-	const w1 : Witness = {name: 'w1', giveEvidence: {Verdict :'Not Guilty'} };
-	const w2 : Witness = {name: 'w2', giveEvidence(): {VERDICTS : 'Not Guilty'}};
-	const w3 : Witness = {name: 'w3', giveEvidence(): {VERDICTS : 'Not Guilty'}};
-	const w4 : Witness = {name: 'w4', giveEvidence(): {VERDICTS : 'Not Guilty'}};
+	const w1 : Witness = {name: 'w1', giveEvidence: function () {return 'Not Guilty'} };
+	const w2 : Witness = {name: 'w2', giveEvidence: function () {return 'Not Guilty'} };
+	const w3 : Witness = {name: 'w3', giveEvidence: function () {return 'Not Guilty'} };
+	const w4 : Witness = {name: 'w4', giveEvidence: function () {return 'Not Guilty'} };
 
-	return [];
+	return [w1, w2, w3, w4];
 }
