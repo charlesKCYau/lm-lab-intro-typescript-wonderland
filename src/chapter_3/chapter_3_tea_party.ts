@@ -20,10 +20,19 @@ type Table = {
 
 function setTheTable(): Table {
 	// 👉 FIXME ❌
-	const someDrink : Drink = {type: 'Tea', poured: true};
-	const someSeat : Seat = {drink: someDrink};
 	//return { seats: [] };
-	return { seats: [someSeat, someSeat, someSeat] };
+	const table: Table = { seats: [] };
+
+	for (let i = 0; i < 4; i++) {
+		table.seats.push({
+			drink: {
+				type: 'Tea',
+				poured: true,
+			},
+		});
+	}
+	return table;
+
 }
 
 export function attendATeaParty() {

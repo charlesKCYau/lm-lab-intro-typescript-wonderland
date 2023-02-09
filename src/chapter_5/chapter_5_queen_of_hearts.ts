@@ -47,11 +47,26 @@ export function meetTheQueen(): void {
 }
 
 // 👉 FIXME ❌ - this function needs writing to meet the above criteria
-function getWitnesses(): any {
-	const w1 : Witness = {name: 'w1', giveEvidence: function () {return 'Not Guilty'} };
-	const w2 : Witness = {name: 'w2', giveEvidence: function () {return 'Not Guilty'} };
-	const w3 : Witness = {name: 'w3', giveEvidence: function () {return 'Not Guilty'} };
-	const w4 : Witness = {name: 'w4', giveEvidence: function () {return 'Not Guilty'} };
+function getWitnesses(): Array<Witness> {
+	return [
+		{
+			name: 'The Mad Hatter',
+			giveEvidence: () => 'Not Guilty',
+		},
+		{
+			name: 'The March Hare',
+			giveEvidence: () => {
+				return 'Not Guilty';
+			},
+		},
+		{
+			name: 'The Cheshire Cat',
+			giveEvidence: () => 'Not Guilty',
+		},
+		{
+			name: 'The White Rabbit',
+			giveEvidence: () => 'Not Guilty',
+		},
+	];
 
-	return [w1, w2, w3, w4];
 }

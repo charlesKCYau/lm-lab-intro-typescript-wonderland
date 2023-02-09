@@ -30,10 +30,10 @@ function failImmediately() {
 	return endAdventure();
 }
 
-const numberBiggerThanThree: any = 11; // 👉 FIXME ❌
+const numberBiggerThanThree: number = 11; // 👉 FIXME ❌
 
 // 👉 FIXME ❌
-function checkEntryCodeIsBiggerThanThree(code: any) {
+function checkEntryCodeIsBiggerThanThree(code: number) {
 	return code > 3; // 👉 FIXME ❌
 }
 
